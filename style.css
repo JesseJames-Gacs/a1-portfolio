@@ -113,3 +113,64 @@ footer {
     height: 180px;
   }
 }
+
+.experience-cards {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.experience-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 46%;
+  box-sizing: border-box;
+  margin: 1%;
+  padding: 2em;
+  border-radius: 20px;
+  text-align: left;
+  min-height: 400px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+game-card {
+  background-color: #e4f3ed;
+}
+
+.research-card {
+  background-color: #eae8fc;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.experience-icon {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+.experience-card h3 {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.experience-time {
+  color: #555555;
+  font-size: 0.9em;
+}
+
+.experience-preview {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 640px) {
+  .experience-card {
+    display: block;
+    width: 100%;
+    margin: 1em 0;
+    min-height: 0;
+  }
+}
